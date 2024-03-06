@@ -3,19 +3,27 @@
   margin:0;
   padding:0;
   border:0;
+
 }
-   body{
+
+:root{
+    --corsub: #4b0808;
+}
+
+body{
    background-color: rgb(245, 178, 161);
 }
-   header {
+
+header {
      padding: 32px;
-     border-bottom: 5px solid #6a0202;
+     border-bottom: 5px solid var(--corsub);
      background-color: #ca2b2b ;
 }
-   header div {
+
+.links{
      text-align: center;
 }
-   header div a {
+.links a {
      color: bisque;
      font-size: 24px;
      line-height: 32px;
@@ -23,7 +31,7 @@
      text-decoration: solid;
      font-family: "Oswald", sans-serif;
 }
-header div a:hover{
+.links a:hover{
   color: #1f0911;
   transition: color 700ms;
 }
@@ -33,12 +41,25 @@ header div a:hover{
 }
 #box img{
     border-radius: 25%;
-    border: 8px solid #4b0808;
+    border: 8px solid var(--corsub);
     margin-bottom: 32px;
+}
+#box h1{
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bolder;
 }
 #box p {
     max-width: 500px;
-    margin: 32px auto;
+    margin: 28px auto;
     font-size: 22px;
-    line-height: 32ps;
+    line-height: 32px;
+}
+#linksFooter {
+  padding-top: 32px;
+}
+#linksFooter a {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--corsub);
 }
